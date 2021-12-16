@@ -1,0 +1,376 @@
+
+.cuerpo-index{
+    display: grid;
+    background-color: rgb(0, 0, 0);
+    grid-template-areas: 
+        "logo menu menu"
+        "main main main"
+        "section1 section2 section3"
+        "footer footer footer";
+    grid-template-rows:  6% 80% 25% 11%;
+    grid-template-columns: auto auto auto;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/*-------------------------------------------header-index------------------------------------------*/
+
+.logo{
+    grid-area: logo;
+    background-color: rgb(243, 232, 167);
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 150%;
+    border: 2px white solid;
+    animation-name: logoCover;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes logoCover {
+    0% {background-color: #f3e1ae;color: black;}
+    25% {background-color: #34373a; color: white;}
+    50% {background-color: #ffffff; color: black;}
+    75% {background-color: #34373a; color: white;}
+    100% {background-color: #f3e1ae;color: black;}
+}
+
+
+
+.logo p{
+    margin-top: 10px;
+    animation-name: logoanimation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+@keyframes logoanimation {
+    0% {left: 5%;}
+    25% {left: 30%;}
+    50% {left: 65%;}
+    75% {left: 30%;}
+    100% {left: 5%;}
+}
+
+
+.header{
+    display: grid;
+    grid-area: menu;
+    background-color: #575d64; 
+    border: 2px rgb(255, 255, 255) solid;
+    justify-content: right;
+}
+
+
+.opcionesheader{
+    color: white;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 100%;
+    text-decoration: none;
+}
+
+.menu-index{
+    display: flex;
+    padding-top: 5px;
+}
+
+.header nav ul li {
+    list-style-type: none; 
+}
+
+.header nav ul{
+    padding: 0px;
+    margin-top: 14px;
+    margin-bottom: 10px;
+}
+
+
+
+
+/*--------------------------------------------------main-index---------------------------------*/
+
+
+.main-index{
+    grid-area: main;
+    background-image: url('../assets/Que-diferencia-la-panaderia-de-la-pasteleria.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0px;
+    padding: 80px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+    line-height: 50px;
+}
+
+.mainpanaderia {
+    display: flex;
+    grid-area: section1;
+    background-image: url('../assets/opcion2.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px rgb(255, 255, 255) solid;
+    justify-content: center;
+}
+
+.mainpanaderia :hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.mainpasteleria {
+    display: flex;
+    grid-area: section2;
+    background-image: url('../assets/Pasteleria.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px rgb(255, 255, 255) solid;
+    justify-content: center;
+}
+
+.mainpasteleria :hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.maindesayuno {
+    display: flex;
+    grid-area: section3;
+    background-image: url('../assets/desayunos.jpg');
+    background-size: cover;
+    background-position: center;
+    border: 2px rgb(255, 255, 255) solid;
+    justify-content: center;
+}
+
+.maindesayuno :hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+.texto-opciones-panaderia{
+    color: white;
+    font-size: 300%;
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    text-decoration: none;
+    padding-top: 60px;
+}
+
+/*********************************footer-index****************************************************/
+
+.footer{
+    grid-area: footer;
+    margin: 0px;
+    border: 20px;
+    background: #f3e1ae;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #34373a, #f3e1ae);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #34373a, #f3e1ae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+
+.redes {
+    height: 70px;
+    padding: 0px;
+}
+
+.rsociales {
+    text-align: center;
+}
+
+.rsociales li{
+    display: inline-block;
+}
+
+.rsociales li a{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.redes ul{
+    padding: 0;
+}
+
+.rsociales li a :hover {
+    transform: translateY(-3px) scale(1.05);
+}
+
+/*----------------------------------------panaderia.html-----------------------------------*/
+
+
+.body-panaderia{
+    display: grid;
+    grid-template-areas:
+        "logo menu menu"
+        "main main main";
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 6% 95%;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(2, 2, 2);
+}
+
+.main-panaderia{
+    display: grid;
+    color: white;
+    grid-area: main;
+    grid-template-areas: 
+        "texto1 texto1"
+        "texto3 imagen1"
+        "imagen2 texto4"
+        "texto5 imagen3";
+    grid-template-rows:  4vh 33vh 33vh 33vh;
+    grid-template-columns: 50% 50%;
+    margin: 0px;
+    padding: 0px;
+    background: #ffffff;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e9ad07, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #e9ad07, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+
+.titulo-panaderia{
+    grid-area: texto1;
+    margin: 0px;
+    padding-left: 20px;
+}
+
+.opcion-panes{
+    grid-area: texto3;
+    font-size: 20px;
+    justify-content: left;
+    margin: 0px;
+    padding-left: 20px;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    background-image: url(../assets/header.png);
+    background-size: cover;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.imagen-panes{
+    display: flex;
+    background-size: cover;
+    grid-area: imagen1;
+    justify-content: center;
+}
+
+.imagen-panes-tamaño{
+    width: 60%;
+}
+
+.opcion-galletas{
+    grid-area: texto4;
+    font-size: 20px;
+    justify-content: left;
+    margin: 0px;
+    padding-left: 20px;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    background-image: url(../assets/desayunos2.png);
+    background-size: cover;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.imagen-galletas{
+    display: flex;
+    grid-area: imagen2;
+    justify-content: center;
+}
+
+.imagen-galleta-tamaño{
+    width: 60%;
+}
+
+.opcion-facturas{
+    grid-area: texto5;
+    font-size: 20px;
+    justify-content: left;
+    margin: 0px;
+    padding-left: 20px;
+    border: 2px rgb(255, 255, 255) solid;
+    border-radius: 10px;
+    background-image: url(../assets/unnamed.jpg);
+    background-size: cover;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.imagen-facturas{
+    display: flex;
+    grid-area: imagen3;
+    justify-content: center;
+
+}
+
+.imagen-facturas-tamaño{
+    width: 60%;
+    height: auto;
+}
+/*---------------------------------nosotros-index------------------------------*/
+.mainNosotros{
+background: #f3e1ae;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #34373a, #f3e1ae);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #34373a, #f3e1ae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+}
+    
+/*---------------------------------contacto------------------------------------*/
+
+
+.contacto-html {
+    display: grid;
+    grid-template-areas:
+        "logo menu menu"
+        "main main main";
+    grid-template-columns: 30% 35% 35%;
+    grid-template-rows: 10% 90%;
+    margin: 0px;
+    padding: 0px;
+    color: rgb(255, 255, 255);
+    background-image: url(../assets/opcion.png);
+    background-size: cover;
+    animation-name: contacto-cover;
+    animation-duration: 12s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes contacto-cover {
+    0% {background-image: url(../assets/shutterstock_1523956904-scaled.jpg); background-size: cover;}
+    25% {background-image: url(../assets/Que-diferencia-la-panaderia-de-la-pasteleria.jpg);background-size: cover;}
+    50% {background-image: url(../assets/desayunos2.png);background-size: cover;}
+    75% {background-image: url(../assets/panaderia.jpg);background-size: cover;}
+    100% {background-image: url(../assets/shutterstock_1523956904-scaled.jpg); background-size: cover;}
+}
+
+.input-contacto{
+    grid-area: main;
+    margin-top: 8%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-shadow: 2px 2px 2px #000;
+}
+
+textarea {
+    width: 99%;
+}
+
+fieldset {
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
