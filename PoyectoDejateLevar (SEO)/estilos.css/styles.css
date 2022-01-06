@@ -159,18 +159,14 @@
       grid-template-areas: "menu menu menu" "main main main";
   -ms-grid-columns: 30% 35% 35%;
       grid-template-columns: 30% 35% 35%;
-  -ms-grid-rows: 6% 95%;
-      grid-template-rows: 6% 95%;
+  -ms-grid-rows: 6% 105%;
+      grid-template-rows: 6% 105%;
   height: 100vh;
   margin: 0px;
   padding: 0px;
   color: #020202;
-  background: #f3e1ae;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#34373a), to(#f3e1ae));
-  background: linear-gradient(to right, #34373a, #f3e1ae);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(../assets/white-wheat-flour-scattered-on-1777933.jpg);
+  background-size: cover;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;
 }
@@ -213,11 +209,22 @@
   padding-left: 20px;
 }
 
+.fondo--panes {
+  background-image: url(../assets/header.png);
+}
+
+.fondo--galletas {
+  background-image: url(../assets/desayunos2.png);
+}
+
+.fondo--facturas {
+  background-image: url(../assets/unnamed.jpg);
+}
+
 .opcion, .opcion--galletas, .opcion--facturas {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: texto3;
-  background-image: url(../assets/header.png);
   font-size: 100%;
   -webkit-box-pack: left;
       -ms-flex-pack: left;
@@ -225,7 +232,7 @@
   margin: 0px;
   padding-left: 20px;
   border: 2px white solid;
-  border-radius: 10px;
+  border-radius: 50px;
   background-size: cover;
   padding-top: 50px;
 }
@@ -256,7 +263,6 @@
   -ms-grid-row: 3;
   -ms-grid-column: 2;
   grid-area: texto4;
-  background-image: url(../assets/desayunos2.png);
 }
 
 .imagen-galletas {
@@ -275,7 +281,6 @@
   -ms-grid-row: 4;
   -ms-grid-column: 1;
   grid-area: texto5;
-  background-image: url(../assets/unnamed.jpg);
 }
 
 .imagen-facturas {
@@ -380,15 +385,11 @@ fieldset {
       grid-template-columns: auto auto auto;
   -ms-grid-rows: 10% 90%;
       grid-template-rows: 10% 90%;
+  height: 100vh;
   margin: 0px;
   padding: 0px;
   color: white;
-  background: #f3e1ae;
-  /* fallback for old browsers */
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-gradient(linear, left top, right top, from(#34373a), to(#f3e1ae));
-  background: linear-gradient(to right, #34373a, #f3e1ae);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: url(../assets/wooden-background-with-board-and-wheat-free-photo.jpg);
   background-size: 100vw;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;

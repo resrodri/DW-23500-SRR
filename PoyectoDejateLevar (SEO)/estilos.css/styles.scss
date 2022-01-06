@@ -127,14 +127,13 @@
         "menu menu menu"
         "main main main";
     grid-template-columns: 30% 35% 35%;
-    grid-template-rows: 6% 95%;
+    grid-template-rows: 6% 105%;
     height: 100vh;
     margin: 0px;
     padding: 0px;
     color: rgb(2, 2, 2);
-    background: #f3e1ae;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #34373a, #f3e1ae);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #34373a, #f3e1ae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    background-image: url(../assets/white-wheat-flour-scattered-on-1777933.jpg);
+    background-size: cover;
     font-weight: bold; 
     text-shadow: 3px 3px 3px #000;   
 }
@@ -169,15 +168,28 @@
     padding-left: 20px;
 }
 
+//maps
+
+$fondos: (
+    panes: url(../assets/header.png),
+    galletas: url(../assets/desayunos2.png),
+    facturas: url(../assets/unnamed.jpg)
+);
+
+@each $valor, $fondo in $fondos {
+    .fondo--#{$valor}{
+        background-image: $fondo;
+    }
+}
+
 .opcion{
     grid-area: texto3;
-    background-image: url(../assets/header.png);
     font-size: 100%;
     justify-content: left;
     margin: 0px;
     padding-left: 20px;
     border: 2px rgb(255, 255, 255) solid;
-    border-radius: 10px;
+    border-radius: 50px;
     background-size: cover;
     padding-top: 50px;
     &__titulo {
@@ -205,7 +217,6 @@
 .opcion--galletas{
     @extend .opcion;
     grid-area: texto4;
-    background-image: url(../assets/desayunos2.png);
 }
 
 .imagen-galletas{
@@ -216,7 +227,6 @@
 .opcion--facturas{
     @extend .opcion;
     grid-area: texto5;
-    background-image: url(../assets/unnamed.jpg);
 }
 
 
@@ -309,12 +319,11 @@ fieldset {
         "main main main";
     grid-template-columns: auto auto auto;
     grid-template-rows: 10% 90%;
+    height: 100vh;
     margin: 0px;
     padding: 0px;
     color: rgb(255, 255, 255);
-    background: #f3e1ae;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #34373a, #f3e1ae);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #34373a, #f3e1ae); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    background-image: url(../assets/wooden-background-with-board-and-wheat-free-photo.jpg);
     background-size: 100vw;
     font-weight: bold; 
     text-shadow: 3px 3px 3px #000; 
