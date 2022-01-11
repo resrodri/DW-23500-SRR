@@ -54,7 +54,6 @@
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: panaderia;
-  background-image: url("../assets/opcion2.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -84,7 +83,6 @@
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: pasteleria;
-  background-image: url("../assets/Pasteleria.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -110,7 +108,6 @@
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: desayunos;
-  background-image: url("../assets/desayunos.jpg");
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -165,7 +162,6 @@
   margin: 0px;
   padding: 0px;
   color: #020202;
-  background-image: url(../assets/white-wheat-flour-scattered-on-1777933.jpg);
   background-size: cover;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;
@@ -207,18 +203,6 @@
   grid-area: texto1;
   margin: 0px;
   padding-left: 20px;
-}
-
-.fondo--panes {
-  background-image: url(../assets/header.png);
-}
-
-.fondo--galletas {
-  background-image: url(../assets/desayunos2.png);
-}
-
-.fondo--facturas {
-  background-image: url(../assets/unnamed.jpg);
 }
 
 .opcion, .opcion--galletas, .opcion--facturas {
@@ -307,7 +291,6 @@
   margin: 0px;
   padding: 0px;
   color: white;
-  background-image: url(../assets/nosotros5.jpg);
   background-size: cover;
   background-position: center;
   font-weight: bold;
@@ -342,7 +325,6 @@
   margin: 0px;
   padding: 0px;
   color: white;
-  background-image: url(../assets/shutterstock_7222862681.jpg);
   background-size: cover;
   background-position: center;
   font-weight: bold;
@@ -389,7 +371,6 @@ fieldset {
   margin: 0px;
   padding: 0px;
   color: white;
-  background-image: url(../assets/wooden-background-with-board-and-wheat-free-photo.jpg);
   background-size: 100vw;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;
@@ -453,7 +434,6 @@ fieldset {
   margin: 0px;
   padding: 0px;
   color: white;
-  background-image: url(../assets/shutterstock_1523956904-scaled.jpg);
   background-size: 100vw;
   font-weight: bold;
   text-shadow: 4px 4px 4px #000;
@@ -520,5 +500,50 @@ fieldset {
   border-radius: 50px;
   padding: 2% 10%;
   font-size: 90%;
+}
+
+/************************MAPS********************************/
+.fondo--panes {
+  background-image: url(../assets/header.png);
+}
+
+.fondo--galletas {
+  background-image: url(../assets/desayunos2.png);
+}
+
+.fondo--facturas {
+  background-image: url(../assets/unnamed.jpg);
+}
+
+.fondo--harina {
+  background-image: url(../assets/white-wheat-flour-scattered-on-1777933.jpg);
+}
+
+.fondo--dulces {
+  background-image: url(../assets/shutterstock_7222862681.jpg);
+}
+
+.fondo--panes2 {
+  background-image: url(../assets/nosotros5.jpg);
+}
+
+.fondo--madera {
+  background-image: url(../assets/wooden-background-with-board-and-wheat-free-photo.jpg);
+}
+
+.fondo--panes3 {
+  background-image: url(../assets/shutterstock_1523956904-scaled.jpg);
+}
+
+.fondo--panes4 {
+  background-image: url(../assets/opcion2.jpg);
+}
+
+.fondo--pasteleria {
+  background-image: url(../assets/Pasteleria.jpg);
+}
+
+.fondo--desayunos {
+  background-image: url(../assets/desayunos.jpg);
 }
 /*# sourceMappingURL=styles.css.map */
