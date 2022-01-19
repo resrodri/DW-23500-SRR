@@ -14,6 +14,88 @@
   text-shadow: 4px 4px 4px #000;
 }
 
+.navbar {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-item {
+  font-weight: bold;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu {
+  width: 10%;
+}
+
+.navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 700px) {
+  .bodyhtml {
+        grid-template-areas: "main main main" "panaderia panaderia panaderia" "pasteleria pasteleria pasteleria" "desayunos desayunos desayunos" "footer footer footer";
+    -ms-grid-rows: 65% 10% 10% 10% 5%;
+        grid-template-rows: 65% 10% 10% 10% 5%;
+  }
+  .footerindex__div {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .contacto-html {
+    height: 100vh;
+  }
+  .iframenosotros {
+    width: auto;
+    height: auto;
+    margin-top: 40%;
+    margin-bottom: 50%;
+  }
+  .bodynosotros {
+    height: 100vh;
+  }
+  .body-panaderia {
+    height: 100vh;
+  }
+  .opcion, .opcion--galletas, .opcion--facturas {
+    padding-top: 0%;
+  }
+  .cuerpo-pasteleria {
+    height: 100vh;
+  }
+  .opcion__descripcion {
+    font-size: 80%;
+  }
+  .section1__h3 {
+    font-size: 100%;
+  }
+  .section1 ol {
+    padding-left: 10%;
+  }
+  .section2__h3 {
+    font-size: 100%;
+  }
+  .section2 ol {
+    padding-left: 10%;
+  }
+  .bodydesayunos {
+    font-size: 70%;
+    height: 100vh;
+  }
+  .card1__lista {
+    padding-left: 10%;
+  }
+  .card2__lista {
+    padding-left: 10%;
+  }
+  .card3__lista {
+    padding-left: 10%;
+  }
+  .carousel-inner {
+    width: auto;
+  }
+}
+
 .sectionback {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
@@ -134,8 +216,8 @@
   font-size: 250%;
   text-shadow: 2px 2px 2px black;
   text-decoration: none;
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-top: 12vh;
+  margin-bottom: 15%;
 }
 
 .footerindex {
@@ -147,6 +229,12 @@
   margin: 0px;
   border: 20px;
   background-color: rgba(255, 254, 254, 0.1);
+  text-align: center;
+}
+
+.footer-redes {
+  background-color: whitesmoke;
+  border-radius: 50%;
 }
 
 /*----------------------------------------panaderia.html-----------------------------------*/
@@ -156,8 +244,8 @@
       grid-template-areas: "menu menu menu" "main main main";
   -ms-grid-columns: 30% 35% 35%;
       grid-template-columns: 30% 35% 35%;
-  -ms-grid-rows: 6% 105%;
-      grid-template-rows: 6% 105%;
+  -ms-grid-rows: 6% 90%;
+      grid-template-rows: 6% 90%;
   height: 100vh;
   margin: 0px;
   padding: 0px;
@@ -165,13 +253,18 @@
   background-size: cover;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;
+  height: 115vh;
 }
 
-.headerpanaderia {
+.navbarpanaderia {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: menu;
+}
+
+.dropdown-item {
+  background-size: 100vw;
 }
 
 .main-panaderia {
@@ -189,7 +282,7 @@
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
-      grid-template-areas: "texto1 texto1" "texto3 imagen1" "imagen2 texto4" "texto5 imagen3";
+      grid-template-areas: "texto1 texto1" "imagen1 texto3" "texto4 imagen2" "imagen3 texto5";
       grid-template-rows: 4vh 33vh 33vh 33vh;
       grid-template-columns: 50% 50%;
   margin: 0px;
@@ -207,7 +300,7 @@
 
 .opcion, .opcion--galletas, .opcion--facturas {
   -ms-grid-row: 2;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: texto3;
   font-size: 100%;
   -webkit-box-pack: left;
@@ -218,7 +311,7 @@
   border: 2px white solid;
   border-radius: 50px;
   background-size: cover;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 .opcion__titulo {
@@ -233,7 +326,7 @@
 
 .imagen-panes {
   -ms-grid-row: 2;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: imagen1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -245,13 +338,13 @@
 
 .opcion--galletas {
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: texto4;
 }
 
 .imagen-galletas {
   -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: imagen2;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -263,13 +356,13 @@
 
 .opcion--facturas {
   -ms-grid-row: 4;
-  -ms-grid-column: 1;
+  -ms-grid-column: 2;
   grid-area: texto5;
 }
 
 .imagen-facturas {
   -ms-grid-row: 4;
-  -ms-grid-column: 2;
+  -ms-grid-column: 1;
   grid-area: imagen3;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -284,10 +377,10 @@
   display: -ms-grid;
   display: grid;
       grid-template-areas: "menu menu menu" "main main main";
-  -ms-grid-columns: 30% 35% 35%;
-      grid-template-columns: 30% 35% 35%;
-  -ms-grid-rows: 10% 90%;
-      grid-template-rows: 10% 90%;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+  -ms-grid-rows: 15% 90%;
+      grid-template-rows: 15% 90%;
   margin: 0px;
   padding: 0px;
   color: white;
@@ -295,9 +388,10 @@
   background-position: center;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;
+  height: 100vh;
 }
 
-.headernosotros {
+.navbarnos {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -320,8 +414,8 @@
       grid-template-areas: "menu menu menu" "main main main";
   -ms-grid-columns: 30% 35% 35%;
       grid-template-columns: 30% 35% 35%;
-  -ms-grid-rows: 10% 90%;
-      grid-template-rows: 10% 90%;
+  -ms-grid-rows: 15% 90%;
+      grid-template-rows: 15% 90%;
   margin: 0px;
   padding: 0px;
   color: white;
@@ -329,9 +423,10 @@
   background-position: center;
   font-weight: bold;
   text-shadow: 3px 3px 3px #000;
+  height: 100vh;
 }
 
-.headercontacto {
+.navbarcontacto {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -365,8 +460,8 @@ fieldset {
       grid-template-areas: "menu menu menu" "main main main";
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
-  -ms-grid-rows: 10% 90%;
-      grid-template-rows: 10% 90%;
+  -ms-grid-rows: 25% 90%;
+      grid-template-rows: 25% 90%;
   height: 100vh;
   margin: 0px;
   padding: 0px;
@@ -376,7 +471,7 @@ fieldset {
   text-shadow: 3px 3px 3px #000;
 }
 
-.headercontacto {
+.navbarpasteleria {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -418,28 +513,29 @@ fieldset {
   margin-right: 12%;
 }
 
-.container {
-  padding-bottom: 20vh;
+.carousel-item {
+  height: 80vh;
 }
 
 /*---------------------------------------------Desayunos---------------------------*/
-.bodyDesayunos {
+.bodydesayunos {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "navegador navegador navegador" "main1 mai2 main3" "promo1 promo2 promo3";
+      grid-template-areas: "navegador navegador navegador" "main1 main2 main3" "promo1 promo2 promo3";
   -ms-grid-columns: auto auto auto;
       grid-template-columns: auto auto auto;
-  -ms-grid-rows: 10% 50% 30%;
-      grid-template-rows: 10% 50% 30%;
+  -ms-grid-rows: 15% 50% 35%;
+      grid-template-rows: 15% 50% 35%;
   margin: 0px;
   padding: 0px;
   color: white;
-  background-size: 100vw;
+  background-size: cover;
+  background-position: center;
   font-weight: bold;
   text-shadow: 4px 4px 4px #000;
 }
 
-.headerDesayunos {
+.navbardesayunos {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -451,9 +547,9 @@ fieldset {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: main1;
-  margin-left: 30%;
+  margin-left: 20%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 30px;
   padding-left: 10%;
   padding-top: 5%;
 }
@@ -462,9 +558,9 @@ fieldset {
   -ms-grid-row: 2;
   -ms-grid-column: 3;
   grid-area: main3;
-  margin-right: 30%;
+  margin-right: 20%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 30px;
   padding-left: 10%;
   padding-top: 5%;
 }
@@ -475,7 +571,7 @@ fieldset {
   grid-area: promo1;
   margin: 10%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 2% 10%;
   font-size: 90%;
 }
@@ -486,7 +582,7 @@ fieldset {
   grid-area: promo2;
   margin: 10%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 2% 10%;
   font-size: 90%;
 }
@@ -497,7 +593,7 @@ fieldset {
   grid-area: promo3;
   margin: 10%;
   background-color: rgba(0, 0, 0, 0.3);
-  border-radius: 50px;
+  border-radius: 30px;
   padding: 2% 10%;
   font-size: 90%;
 }
